@@ -1,0 +1,39 @@
+<h2 class="text-light">This Sites Github Project</h2>
+<table class="table table-striped table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Language</th>
+            <th scope="col">Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>{{mySite.name}}</td>
+            <td>{{mySite.language}}</td>
+            <td><a href={{mySite.html_url}}>Link</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 class="text-light">My Github Projects</h2>
+<table class="table table-striped table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Language</th>
+            <th scope="col">Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let repo  of repos;index  as i;">
+            <th scope="row">{{i + 1}}</th>
+            <td>{{repo.name}}</td>
+            <td>{{repo.language}}</td>
+            <td><a href={{repo.html_url}}>Link</a></td>
+        </tr>
+    </tbody>
+</table>
