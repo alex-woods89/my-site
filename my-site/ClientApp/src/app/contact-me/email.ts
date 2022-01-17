@@ -4,5 +4,5 @@ export class Email {
     public sendersName: string = "",
     public sendersEmailAddress: string = "",
     public subject: string = ""
-  )
+  ) { }
 }
