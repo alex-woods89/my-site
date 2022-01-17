@@ -16,5 +16,9 @@ export class MyReposComponent {
       })
   }
   repos = []
-  mySite = {}
+  mySite = {
+    "name": "",
+    "language": "",
+    "html_url": ""
+  }
 }
